@@ -4,7 +4,7 @@ author: '[Your student number here]'
 date: "`r format(Sys.time(), '%d/%m/%y')`"
 output: html_document
 ---
-<!-- This is a suggested template to write the summative assignments. Feel free to make changes as appropriate according to the guidance. -->
+<!-- This is a suggested template to write the formative assignment. Feel free to make changes as appropriate according to the guidance. -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
