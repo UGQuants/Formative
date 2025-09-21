@@ -1,0 +1,40 @@
+---
+title: "Setting up a Quantitative Project"
+author: '[Your student number here]'
+date: "`r format(Sys.time(), '%d/%m/%y')`"
+output: html_document
+---
+<!-- This is a suggested template to write the summative assignments. Feel free to make changes as appropriate according to the guidance. -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
+source("R/01_setup.R", local = knitr::knit_global())
+```
+
+```{r preamble, include=FALSE}
+# Load packages
+library(tidyverse)
+
+# Read data
+nilt <- readRDS("data/fullnilt_2012.rds")
+
+# Subset with variables used in regression model
+nilt_subset <- select(nilt, persinc2, rsex, religcat, orient, uninatid, tunionsa, rsuper, rage)
+```
+
+Word count: `r wordcountaddin::word_count("Formative-template.Rmd") - 8`.
+<!-- Update the "- 8" in the line above to also take into account your bibliography. For example, if your bibliography is 52 characters then update the above to "- 60". -->
+
+
+## Introduction
+<!-- Word count: approx. 200-250  -->
+<!-- Provide research question and hypothesis/hypotheses with rationale and literature to support them. -->
+
+
+## Data and descriptive statistics
+<!-- Word count: approx. 200-250 -->
+<!-- Provide a description of the dataset and summary statistics of the model variables. -->
+
+
+## Bibliography
+<!-- Include bibliography here. -->
