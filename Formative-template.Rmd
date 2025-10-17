@@ -19,17 +19,34 @@ library(tidyverse)
 nilt <- readRDS("data/fullnilt_2012.rds")
 
 # Subset with variables used in regression model
-nilt_subset <- nilt |> select(persinc2, rsex, religcat, orient, uninatid, tunionsa, rsuper, rage)
+nilt_subset <- nilt |>
+  select(persinc2, rsex, religcat, orient, uninatid, tunionsa, rsuper, rage)
 ```
 
-Word count: `r wordcountaddin::word_count("Formative-template.Rmd") - 8`.
-<!-- Update the "- 8" in the line above to also take into account your bibliography. For example, if your bibliography is 52 characters then update the above to "- 60". -->
+Word count: `r wordcountaddin::word_count("Formative-template.Rmd") - 134`.
+<!-- The above line will automatically calculate the word count of your report excluding the code chunks. We have manually added "- 134" to also substract from the word count the words in the info box below and the section headers. -->
+<!-- Update the "- 134" in the code above to also take into account your bibliography. For example, if your bibliography is 52 characters then update the above to "- 186". -->
 
+> **Important Information**
+> 
+> For this Formative Assessment you are asked to consolidate the main elements of the course across Weeks 1-5 in the form of a short report (500 words maximum). Use this template file to write your report and submit it as a knitted HTML document.
+>
+> The `nilt` dataset has already been loaded, variables coerced, and an `nilt_subset` dataframe created for you. Use the `nilt_subset` dataframe for this assessment. It has the same variables that will be used for the regression model in the Summative Assessment.
+>
+> - `persinc2` - Annual Personal Income
+> - `rsex` - Sex
+> - `religcat` - Religion
+> - `orient` - Sexual Orientation
+> - `uninatid` - NI Constitutional View
+> - `tunionsa` - Trade Union Membership
+> - `rsuper` - Supervisor
+> - `rage` - Age
+>
+> For more information and guidance on the Formative Assessment, please see the [Formative Assessment page](https://ugquants.github.io/quants_workbook/assessments/formative.html) in the lab workbook.
 
 ## Introduction
 <!-- Word count: approx. 200-250  -->
-<!-- Provide research question and hypothesis/hypotheses with rationale and literature to support them. -->
-
+<!-- Provide a research question and hypothesis/hypotheses with rationale and literature to support them. -->
 
 ## Data and descriptive statistics
 <!-- Word count: approx. 200-250 -->
